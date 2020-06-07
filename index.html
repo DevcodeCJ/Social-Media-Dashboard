@@ -3,272 +3,201 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
   <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png">
-  <link type="text/css" href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
   <link rel="stylesheet" href="css-dashboard.css">
   <title>Frontend Mentor|Media Dashboard</title>
 </head>
 
 <body>
-  <div class="top-BG">
-    <div class="page-heading">
-      <h1>Social Media Dashboard</h1>
-      <h3>Total Followers: 23,004</h3>
-    </div>
-    <!-- TOGGLE -->
-    <span class="toggle-text">Dark Mode</span>
-    <label class="toggle">
-      <input class="checkbox" type="checkbox">
-      <div class="toggle-btn">
-
+  <!-- HEADER -->
+  <header>
+    <div class="top-container">
+      <div class="page-heading">
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
       </div>
-    </label>
-    <div class="attribution">
-      <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></span>
-      <span>Coded by <a href="#" target="_blank">Chiji Okafor</a></span>
-    </div>
 
-    <!-- TOP CARDS -->
-    <!-- FACEBOOK CARD -->
-    <div class="facebook-card top-cards">
-      <table cellspacing="6" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-facebook.svg" alt="facebook-icon">
-          </td>
-          <td>
-            <p class="text">@nathanf</p>
-          </td>
-        </tr>
-      </table>
-      <p class="main-numbers">1987</p>
-      <p class="followers">F O L L O W E R S</p>
-      <table cellspacing="5" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-up.svg" alt="up-icon">
-          </td>
-          <td>
-            <p class="green-txt">12 Today</p>
-          </td>
-        </tr>
-      </table>
+      <!-- TOGGLE -->
+      <label class="toggle">Dark Mode
+        <input class="checkbox" type="checkbox">
+        <div class="toggle-btn"></div>
+      </label>
     </div>
-    <!-- TWITTER CARD -->
-    <div class="twitter-card top-cards">
-      <table cellspacing="6" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-twitter.svg" alt="twitter-icon">
-          </td>
-          <td>
-            <p class="text">@nathanf</p>
-          </td>
-        </tr>
-      </table>
-      <p class="main-numbers">1044</p>
-      <p class="followers">F O L L O W E R S</p>
-      <table cellspacing="5" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-up.svg" alt="icon-up">
-          </td>
-          <td>
-            <p class="green-txt">99 Today</p>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- INSTAGRAM BORDER -->
-    <div class="instagram-border"></div>
-    <!-- INSTAGRAM CARD -->
-    <div class="instagram-card top-cards">
-      <table cellspacing="6" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-instagram.svg" alt="instagram-icon">
-          </td>
-          <td>
-            <p class="text">@nathanf</p>
-          </td>
-        </tr>
-      </table>
-      <p class="main-numbers">11k</p>
-      <p class="followers">F O L L O W E R S</p>
-      <table cellspacing="5" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-up.svg" alt="icon-up">
-          </td>
-          <td>
-            <p class="green-txt">1099 Today</p>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- YOUTUBE CARD -->
-    <div class="youtube-card top-cards">
-      <table cellspacing="6" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-youtube.svg" alt="youtube-icon">
-          </td>
-          <td>
-            <p class="text">@nathanf</p>
-          </td>
-        </tr>
-      </table>
-      <p class="main-numbers">8239</p>
-      <p class="followers">F O L L O W E R S</p>
-      <table cellspacing="5" class="card-heading">
-        <tr>
-          <td>
-            <img src="images/icon-down.svg" alt="icon-up">
-          </td>
-          <td>
-            <p class="red-txt">144 Today</p>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div class="sub-heading">
-    <h2>Overview - Today</h2>
-  </div>
+    <hr>
+  </header>
 
-  <!-- MIDDLE CARDS -->
-  <!-- FACEBOOK VIEWS -->
-  <div class="middle-cards facebook-views">
-    <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook-icon">
-    <p class="bottom-text">Page Views</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-up.svg" alt="icon-up">
-        </td>
-        <td>
+  <!-- SECTION 1 -->
+  <section class="main-cards">
+    <div class="middle-container">
+      <!-- FACEBOOK CARD -->
+      <div class="facebook-card top-cards">
+        <div class="card-heading">
+          <img src="images/icon-facebook.svg" alt="">
+          <p class="user-txt">@nathanf</p>
+        </div>
+        <div class="card-count">
+          <p class="main-numbers">1987</p>
+          <p class="desc">F O L L O W E R S</p>
+        </div>
+        <div class="topcard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
+          <p class="green-txt">12 Today</p>
+        </div>
+      </div>
+      <!-- TWITTER CARD -->
+      <div class="twitter-card top-cards">
+        <div class="card-heading">
+          <img src="images/icon-twitter.svg" alt="">
+          <p class="user-txt">@nathanf</p>
+        </div>
+        <div class="card-count">
+          <p class="main-numbers">1044</p>
+          <p class="desc">F O L L O W E R S</p>
+        </div>
+        <div class="topcard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
+          <p class="green-txt">99 Today</p>
+        </div>
+      </div>
+      <!-- INSTAGRAM CARD -->
+      <div class="instagram-card top-cards">
+        <div class="instagram-card-heading">
+          <img src="images/icon-instagram.svg" alt="">
+          <p class="user-txt">@realnathanf</p>
+        </div>
+        <div class="card-count">
+          <p class="main-numbers">11k</p>
+          <p class="desc">F O L L O W E R S</p>
+        </div>
+        <div class="topcard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
+          <p class="green-txt">1099 Today</p>
+        </div>
+      </div>
+      <!-- YOUTUBE CARD -->
+      <div class="youtube-card top-cards">
+        <div class="card-heading">
+          <img src="images/icon-youtube.svg" alt="">
+          <p class="user-txt">Nathan F.</p>
+        </div>
+        <div class="card-count">
+          <p class="main-numbers">11k</p>
+          <p class="desc">S U B S C R I B E R S</p>
+        </div>
+        <div class="topcard-footing">
+          <img src="images/icon-down.svg" class="down-icon" alt="">
+          <p class="red-txt">144 Today</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="stats-row1">
+    <div class="sub-heading">
+      <h2>Overview - Today</h2>
+    </div>
+    <div class="bottom-row1">
+      <!-- FACEBOOK VIEWS -->
+      <div class="middle-cards facebook-views">
+        <img class="social-icons" src="images/icon-facebook.svg" alt="">
+        <p class="bottom-text">Page Views</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
           <p class="green-txt">3%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">87</p>
-  </div>
-  <!-- FACEBOOK LIKES -->
-  <div class="middle-cards facebook-likes">
-    <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook-icon">
-    <p class="bottom-text">Likes</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-down.svg" alt="icon-down">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">87</p>
+      </div>
+      <!-- FACEBOOK LIKES -->
+      <div class="middle-cards facebook-likes">
+        <img class="social-icons" src="images/icon-facebook.svg" alt="">
+        <p class="bottom-text">Likes</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-down.svg" class="down-icon" alt="">
           <p class="red-txt">2%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">52</p>
-  </div>
-  <!-- INSTAGRAM LIKES -->
-  <div class="middle-cards instagram-likes">
-    <img class="instagram-icon" src="images/icon-instagram.svg" alt="instagram-icon">
-    <p class="bottom-text">Likes</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-up.svg" alt="icon-up">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">52</p>
+      </div>
+      <!-- INSTAGRAM LIKES -->
+      <div class="middle-cards instagram-likes">
+        <img class="social-icons" src="images/icon-instagram.svg" alt="">
+        <p class="bottom-text">Likes</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
           <p class="green-txt">2257%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">5462</p>
-  </div>
-  <!-- INSTAGRAM VIEWS -->
-  <div class="middle-cards instagram-views">
-    <img class="instagram-icon" src="images/icon-instagram.svg" alt="instagram-icon">
-    <p class="bottom-text">Profile Views</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-up.svg" alt="icon-up">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">5462</p>
+      </div>
+      <!-- INSTAGRAM VIEWS -->
+      <div class="middle-cards instagram-views">
+        <img class="social-icons" src="images/icon-instagram.svg" alt="">
+        <p class="bottom-text">Profile Views</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
           <p class="green-txt">1375%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">52k</p>
-  </div>
+        </div>
+        <p class="bottom-numbers">52k</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- BOTTOM CARDS -->
-  <!-- RETWEETS -->
-  <div class="bottom-cards retweets">
-    <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter-icon">
-    <p class="bottom-text">Retweets</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-up.svg" alt="icon-up">
-        </td>
-        <td>
+  <!-- SECTION 3 -->
+  <section class="stats-row2">
+    <div class="bottom-row2">
+      <!-- RETWEETS -->
+      <div class="bottom-cards retweets">
+        <img class="social-icons" src="images/icon-twitter.svg" alt="">
+        <p class="bottom-text">Retweets</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
           <p class="green-txt">303%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">117</p>
-  </div>
-  <!-- TWITTER LIKES -->
-  <div class="bottom-cards twitter-likes">
-    <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter-icon">
-    <p class="bottom-text">Likes</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-up.svg" alt="icon-up">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">117</p>
+      </div>
+      <!-- TWITTER LIKES -->
+      <div class="bottom-cards twitter-likes">
+        <img class="social-icons" src="images/icon-twitter.svg" alt="">
+        <p class="bottom-text">Likes</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-up.svg" class="up-icon" alt="">
           <p class="green-txt">553%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">507</p>
-  </div>
-  <!-- YOUTUBE LIKES -->
-  <div class="bottom-cards youtube-likes">
-    <img class="youtube-icon" src="images/icon-youtube.svg" alt="youtube-icon">
-    <p class="bottom-text">Likes</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-down.svg" alt="icon-down">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">507</p>
+      </div>
+      <!-- YOUTUBE LIKES -->
+      <div class="bottom-cards youtube-likes">
+        <img class="social-icons" src="images/icon-youtube.svg" alt="">
+        <p class="bottom-text">Likes</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-down.svg" class="down-icon" alt="">
           <p class="red-txt">19%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">107</p>
-  </div>
-  <!-- YOUTUBE TOTAL VIEWS -->
-  <div class="bottom-cards youtube-total-views">
-    <img class="youtube-icon" src="images/icon-youtube.svg" alt="youtube-icon">
-    <p class="bottom-text">Total Views</p>
-    <table cellspacing="5" class="indicators">
-      <tr>
-        <td>
-          <img src="images/icon-down.svg" alt="icon-down">
-        </td>
-        <td>
+        </div>
+        <p class="bottom-numbers">107</p>
+      </div>
+      <!-- YOUTUBE TOTAL VIEWS -->
+      <div class="bottom-cards youtube-total-likes">
+        <img class="social-icons" src="images/icon-youtube.svg" alt="">
+        <p class="bottom-text">Total Likes</p>
+        <div class="middlecard-footing">
+          <img src="images/icon-down.svg" class="down-icon" alt="">
           <p class="red-txt">12%</p>
-        </td>
-      </tr>
-    </table>
-    <p class="bottom-numbers">1407</p>
-  </div>
+        </div>
+        <p class="bottom-numbers">1407</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="https://www.frontendmentor.io/profile/DevcodeCJ" target="_blank">CJ</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
